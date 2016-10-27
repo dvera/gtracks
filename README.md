@@ -61,7 +61,7 @@ Now set the id keys in each spreadsheet according the the following schema:
 
 In the trackDb spreadsheet, copy the url key from the URL (hightlighted below).
 
-![trackDbScreenshot](http://www.bio.fsu.edu/~kkyle/share/Screen%20Shot%202016-10-27%20at%202.48.32%20PM.png)
+![trackDb](http://www.bio.fsu.edu/~kkyle/share/Screen%20Shot%202016-10-27%20at%202.48.32%20PM.png)
 
 Then paste that gid into the "genome" field in the genomes spreadsheet. Then copy the url key of the genomes spreadsheet (highlighted below).
 
