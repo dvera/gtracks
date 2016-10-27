@@ -51,13 +51,15 @@ Copy google folder containing spreadsheet [templates](https://drive.google.com/o
 Spreadsheets are named using the "name" field specified in the \_hubDb spreadsheet, in this case "exampleHub". The "assembly" is specified in the genomes sheet (name_genomes) via the "genome" field. This assembly can either be a UCSC genome assembly id (thus making a track hub) or an id for a provided reference assembly (thus making an assembly hub) in which case the twoBit field must also be specified in the genomes sheet.  
 
 Now set the id keys in each spreadsheet according the the following schema:
+
     _hubDb -> name_hub -> name_genomes -> name_trackDb_assembly    
 
 In the \_hubDb spreadsheet, copy and paste the url key from the hub spreadsheet ("exampleHub_hub") into its corresponding "hubId" column. In the hub spreadsheet (name_hub), copy and paste the url key from the genomes spreadsheet (name_genomes) into the \_genomes row. In the genomes spreadsheet (name_genomes), copy and paste the url key from the trackDb spreadsheet (name_trackDb_assembly) into the \_genomeId column for the proper assembly. 
 
 Make a directory on a webserver that will contain your hubs. Download "gtracks" script to your new hub directory. 
 
-Use your favorite text editor to paste the URL key to the "_hubDb"(_) google spreadsheet into the HUBDBID variable definition in line 3 of the gtracks script. So the full schema is:
+Use your favorite text editor to paste the URL key to the "\_hubDb" google spreadsheet into the HUBDBID variable definition in line 3 of the gtracks script. So the full schema is:
+
     gtracks -> _hubDb -> name_hub -> name_genomes -> name_trackDb_assembly
 
 Run "./gtracks all" to have gtracks set up the necesary directory hierarchy for your hubs. 
