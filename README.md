@@ -56,7 +56,9 @@ Now set the id keys in each spreadsheet according the the following schema:
 
     _hubDb -> name_hub -> name_genomes -> name_trackDb_assembly    
 
-In the \_hubDb spreadsheet, copy and paste the url key from the hub spreadsheet ("exampleHub_hub") into its corresponding "hubId" column. In the hub spreadsheet (name_hub), copy and paste the url key from the genomes spreadsheet (name_genomes) into the \_genomes row. In the genomes spreadsheet (name_genomes), copy and paste the url key from the trackDb spreadsheet (name_trackDb_assembly) into the \_genomeId column for the proper assembly. 
+In the \_hubDb spreadsheet, copy and paste the url key from the hub spreadsheet ("exampleHub_hub") 
+![alt text](http://www.bio.fsu.edu/~kkyle/share/Screen%20Shot%202016-10-27%20at%202.48.59%20PM.png)
+into its corresponding "hubId" column. In the hub spreadsheet (name_hub), copy and paste the url key from the genomes spreadsheet (name_genomes) into the \_genomes row. In the genomes spreadsheet (name_genomes), copy and paste the url key from the trackDb spreadsheet (name_trackDb_assembly) into the \_genomeId column for the proper assembly. 
 
 ![alt text](http://www.bio.fsu.edu/~kkyle/share/Screen%20Shot%202016-10-27%20at%202.17.34%20PM.png)
 
