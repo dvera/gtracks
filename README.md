@@ -50,13 +50,15 @@ Copy google folder containing spreadsheet [templates](https://drive.google.com/o
     exampleHub_genomes
     exampleHub_trackDb_assembly
     
-Spreadsheets are named using the "name" field specified in the \_hubDb spreadsheet, in this case "exampleHub". The "assembly" is specified in the genomes sheet (name_genomes) via the "genome" field. This assembly can either be a UCSC genome assembly id (thus making a track hub) or an id for a provided reference assembly (thus making an assembly hub) in which case the twoBit field must also be specified in the genomes sheet.  
+Spreadsheets are named using the "name" field specified in the \_hubDb spreadsheet, in this case "exampleHub". The "assembly" is specified in the genomes sheet (name_genomes) via the "genome" field. This assembly can either be a UCSC genome assembly id (thus making a track hub) or an id for a provided reference assembly (thus making an assembly hub) in which case the twoBit field must also be specified in the genomes sheet and a 2bit reference genome must be placed on the webserver in the hub/assembly/ directory. Only one \_hubDb sheet is required for as many hubs as desired. Only one name_hub and name_genomes sheet is required for each hub. The name_genomes file can contain multiple rows specifiying any combination of track and/or assembly hubs. A name_trackDb_assembly sheet is required for each genome specified in the name_genomes sheet. 
 
 Now set the id keys in each spreadsheet according the the following schema:
 
     _hubDb -> name_hub -> name_genomes -> name_trackDb_assembly    
 
 In the \_hubDb spreadsheet, copy and paste the url key from the hub spreadsheet ("exampleHub_hub") into its corresponding "hubId" column. In the hub spreadsheet (name_hub), copy and paste the url key from the genomes spreadsheet (name_genomes) into the \_genomes row. In the genomes spreadsheet (name_genomes), copy and paste the url key from the trackDb spreadsheet (name_trackDb_assembly) into the \_genomeId column for the proper assembly. 
+
+![alt text](http://www.bio.fsu.edu/~kkyle/share/Screen%20Shot%202016-10-27%20at%202.17.34%20PM.png "_hubDb")
 
 Make a directory on a webserver that will contain your hubs. Download "gtracks" script to your new hub directory. 
 
@@ -67,6 +69,8 @@ Use your favorite text editor to paste the URL key to the "\_hubDb" google sprea
 Run "./gtracks all" to have gtracks set up the necesary directory hierarchy for your hubs. 
 
 Place big data files in hub/assembly/bbi/ directory on webserver. 
+
+Go to genome.ucsc.edu -> My Data -> Track Hubs -> My Hubs and paste full url to hub.txt in URL box. 
 
 ## to do
 - automate generation and sharing of google spreadsheets
