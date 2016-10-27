@@ -83,25 +83,12 @@ This process establishes a relationship between the gtracks script, the spreadsh
 
     gtracks -> _hubDb -> name_hub -> name_genomes -> name_trackDb_assembly
 
-Run "./gtracks all" to have gtracks set up the necesary directory hierarchy for your hubs. 
+In the directory where you saved gtracks, run "./gtracks all" to have gtracks set up the necesary directory hierarchy for the hubs defined in \_hubDb. 
 
-Place big data files in hub/assembly/bbi/ directory on webserver. 
+Place big data files in the bbi directories on webserver as described above. 
 
-Go to genome.ucsc.edu -> My Data -> Track Hubs -> My Hubs and paste full url to hub.txt in URL box. 
+Go to genome.ucsc.edu -> My Data -> Track Hubs -> My Hubs and paste full url pointing to hub.txt on the webserver in URL box. 
 
-
-
-
-
-
-
-
-the URL key to the "\_hubDb" google spreadsheet into the HUBDBID variable definition in line 3 of the gtracks script.
-
-
-Then paste this key into its corresponding "hubId" column. In the hub spreadsheet (name_hub), copy and paste the url key from the genomes spreadsheet (name_genomes) into the \_genomes row. In the genomes spreadsheet (name_genomes), copy and paste the url key from the trackDb spreadsheet (name_trackDb_assembly) into the \_genomeId column for the proper assembly. 
-
-![alt text](http://www.bio.fsu.edu/~kkyle/share/Screen%20Shot%202016-10-27%20at%202.17.34%20PM.png)
 
 ## to do
 - automate generation and sharing of google spreadsheets
