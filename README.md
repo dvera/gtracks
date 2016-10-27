@@ -58,7 +58,7 @@ Now set the id keys in each spreadsheet according the the following schema:
 
 In the \_hubDb spreadsheet, copy and paste the url key from the hub spreadsheet ("exampleHub_hub") into its corresponding "hubId" column. In the hub spreadsheet (name_hub), copy and paste the url key from the genomes spreadsheet (name_genomes) into the \_genomes row. In the genomes spreadsheet (name_genomes), copy and paste the url key from the trackDb spreadsheet (name_trackDb_assembly) into the \_genomeId column for the proper assembly. 
 
-![alt text](http://www.bio.fsu.edu/~kkyle/share/Screen%20Shot%202016-10-27%20at%202.17.34%20PM.png "_hubDb")
+![alt text](http://www.bio.fsu.edu/~kkyle/share/Screen%20Shot%202016-10-27%20at%202.17.34%20PM.png)
 
 Make a directory on a webserver that will contain your hubs. Download "gtracks" script to your new hub directory. 
 
