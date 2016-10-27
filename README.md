@@ -44,10 +44,12 @@ If a user does not have access to such a server, one can easily and cheaply gene
 
 ## getting started
 Copy google folder containing spreadsheet [templates](https://drive.google.com/open?id=0B1_fAUn2NPztODA1TF8wdFZxRkU) to your google drive. Make sure the entire folder is shared via link sharing. The folder contains the following sheets:
+
     _hubDb
     exampleHub_hub
     exampleHub_genomes
     exampleHub_trackDb_assembly
+    
 Spreadsheets are named using the "name" field specified in the \_hubDb spreadsheet, in this case "exampleHub". The "assembly" is specified in the genomes sheet (name_genomes) via the "genome" field. This assembly can either be a UCSC genome assembly id (thus making a track hub) or an id for a provided reference assembly (thus making an assembly hub) in which case the twoBit field must also be specified in the genomes sheet.  
 
 Now set the id keys in each spreadsheet according the the following schema:
@@ -64,6 +66,7 @@ Use your favorite text editor to paste the URL key to the "\_hubDb" google sprea
 
 Run "./gtracks all" to have gtracks set up the necesary directory hierarchy for your hubs. 
 
+Place big data files in hub/assembly/bbi/ directory on webserver. 
 
 ## to do
 - automate generation and sharing of google spreadsheets
