@@ -77,7 +77,7 @@ Then paste that gid into the "hubId" field in the \_hubDb spreadsheet. Then copy
 
 Then use a text editor to replace the key defining HUBDBID in the gtracks script with what you copied from the hubDb spreadsheet URL (highlighted below).
 
-![hubdbid](http://www.bio.fsu.edu/~kkyle/share/Screen%20Shot%202016-10-27%20at%203.28.55%20PM.png)
+![hubdbid](http://www.bio.fsu.edu/~kkyle/share/exhubdbid.png)
 
 This process establishes a relationship between the gtracks script, the spreadsheet defining what hubs to manage, the genomes for each hub, and the tracks for each genome:
 
